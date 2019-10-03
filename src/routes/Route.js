@@ -12,7 +12,6 @@ export default function RouteWrapper({
 }) {
   const signed = false;
 
-  console.tron.log('signed', signed, 'isPrivate', isPrivate);
   if (!signed && isPrivate) {
     return <Redirect to="/" />;
   }
