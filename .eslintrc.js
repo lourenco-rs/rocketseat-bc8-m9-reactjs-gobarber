@@ -38,7 +38,13 @@ module.exports = {
       { allow: ['tron'] }
     ],
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
+    'react-hooks/exhaustive-deps': 'warn',
+    camelcase: 'off',
+    'no-underscore-dangle': 'off',
+    'no-unused-vars': [
+      'error',
+      { argsIgnorePattern: '^_' }
+    ]
   },
   settings: {
     "import/resolver": {
